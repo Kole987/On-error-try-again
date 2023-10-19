@@ -13,8 +13,6 @@ import requests
 # s.mount('https://httpbin.org/status/401', HTTPAdapter(max_retries=retries))
 
 
-response = requests.get('https://httpbin.org/get')
-
 def getting401():
     response1 = requests.get('https://httpbin.org/status/401', )
     if response1.status_code < 400:
