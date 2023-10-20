@@ -1,18 +1,5 @@
 import requests
 
-# from urllib3.util import Retry
-# from requests import Session
-# from requests.adapters import HTTPAdapter
-# s = Session()
-# retries = Retry(
-#     total=3,
-#     backoff_factor=0.1,
-#     status_forcelist=[502, 503, 504],
-#     allowed_methods={'GET'},
-# )
-# s.mount('https://httpbin.org/status/401', HTTPAdapter(max_retries=retries))
-
-
 def getting401():
     response1 = requests.get('https://httpbin.org/status/401', )
     if response1.status_code < 400:
